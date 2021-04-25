@@ -27,7 +27,7 @@ class Knapsack01Problem:
         totalWeight = totalValue = 0
 
         for i in range(len(zeroOneList)):
-            weight, value = self.items[i]
+            value, weight = self.items[i]
             if totalWeight + weight <= self.maxCapacity:
                 totalWeight += zeroOneList[i] * weight
                 totalValue += zeroOneList[i] * value
@@ -41,7 +41,7 @@ class Knapsack01Problem:
         totalWeight = totalValue = 0
 
         for i in range(len(zeroOneList)):
-            weight, value = self.items[i]
+            value, weight = self.items[i]
             if totalWeight + weight <= self.maxCapacity:
                 if zeroOneList[i] > 0:
                     totalWeight += weight

@@ -16,3 +16,12 @@ def get_data(file):
         weights = [[item[1] for item in items]]
         capacities = [c]
         return values, weights, capacities
+
+
+def main():
+    values, weights, capacities = get_data('test.kp')
+    print(values[0], weights[0][0])
+
+
+if __name__ == '__main__':
+    main()

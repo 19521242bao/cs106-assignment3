@@ -13,3 +13,12 @@ def get_data(file):
         items = lines[2:]
         items = list(map(str_to_item, items))
         return items, c
+
+
+def main():
+    items, c = get_data('test.kp')
+    print(items[0])
+
+
+if __name__ == "__main__":
+    main()
