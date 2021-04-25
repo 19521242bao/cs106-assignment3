@@ -1,6 +1,5 @@
 from ortools.algorithms import pywrapknapsack_solver
 from process_data import get_data
-from exit_after import exit_after
 
 
 def main():
